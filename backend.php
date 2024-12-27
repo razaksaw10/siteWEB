@@ -1,8 +1,8 @@
 <?php
 // Configuration de la base de données
 $host = 'localhost';
-$user = 'root';
-$password = 'Razak@1234';
+$user = '#';
+$password = '#';
 $database = 'deneme';
 $port = 3307; // Nouveau port MySQL
 
