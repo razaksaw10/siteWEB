@@ -1,0 +1,465 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    color: #007BFF;
+}
+
+#data-container div {
+    background: #e7f3fe;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+#div-sm  i{
+    transition:0.5s;
+}
+        
+#div-sm  i:hover{
+    transform: scale(2);
+}      
+
+
+
+
+body{
+    background-color: #000;
+}
+@media (max-width: 768px) {
+    .essai {
+        flex-direction: column;
+    }
+
+    #div-orta {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+#Hepsi{
+   background-image: url(#);
+
+}
+.evet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.div-yazilar{
+    background-image: url("reception.jpg");
+    
+    margin: top 100px;;
+    padding: 200px;
+
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+
+    position:relative;
+            min-height: 100vh;
+            width:100%;
+           
+    
+}
+
+.essai{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+
+
+#oho{
+    display: flex;
+    text-align:right;
+    color: red;
+    flex-direction: row;
+    background-color:#000;
+    justify-content: space-between;
+}
+
+.esp{
+    text-align: right;
+}
+.log{
+    height: 50px;
+    border-radius: 50%;
+}
+.sara{
+    padding: 8px 12px;
+    margin-right: -5px;
+    border:none;
+    border-bottom-left-radius: 8px;
+}
+.saara{
+    background-color: #D19163;
+    padding: 8px 12px;
+    border-radius:10px;
+    color: white;
+    border:none;
+}
+.ali{
+    padding: 10px 20px;
+    border: solid 1px black;
+    text-decoration: none;
+    border-radius:10px;
+    background-color:#f7f3f0 ;
+    transition:0.3ms;
+}
+
+#div-alt{
+    background-color:white;
+    padding: 20px;
+
+}
+
+h1{
+    height: 20px;
+}
+
+
+
+
+
+
+*{ color:#303030;
+    
+}
+body{
+    padding:0;
+    margin: 0;
+}
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+
+}
+.nav-ul a{
+    text-decoration: none;
+    color:#303030;
+    padding:8px 15px;
+    transition:all 0,5ms  ease;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+.nav-ul li :hover{
+background-color:#D19163;
+}
+
+#div-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+#div-ara img{
+
+    height:600px;
+    border-radius: 20px;
+
+}
+
+*{
+font-family: 'Open Sans', sans-serif;
+}
+#div-ust{
+background-color: #f7f3f0;
+padding: 20px 0 ;
+z-index: 12px;
+
+
+}
+
+
+#div-orta{
+ 
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+
+}
+
+
+#div-kayit input{
+width: 90px;
+}
+
+
+/*galery style*/
+
+        /* Global Styles */
+        #div-donmek a {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: blue;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        /* Galerie Grille */
+        .gallery-grid {
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .grid-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Galerie Carrousel */
+        .gallery-carousel {
+            padding: 20px;
+            background: #fff;
+            position: relative;
+        }
+
+        .carousel-container {
+            max-width: 500px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            width: 400%;
+        }
+
+        .carousel-slides .slide {
+            flex: 1;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Navigation via les radio-buttons */
+        #slide1:checked ~ .carousel-slides {
+            transform: translateX(0%);
+        }
+
+        #slide2:checked ~ .carousel-slides {
+            transform: translateX(-25%);
+        }
+
+        #slide3:checked ~ .carousel-slides {
+            transform: translateX(-50%);
+        }
+
+        #slide4:checked ~ .carousel-slides {
+            transform: translateX(-75%);
+        }
+
+        /* Navigation Buttons */
+        .carousel-navigation {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .carousel-navigation label {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked + label {
+            background: #333;
+        }
+
+        /* Vidéos avec Texte */
+        .video-section {
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .video-card {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+   
+
+    
+    /*apropos style*/
+        
+
+   
+
+    #div-donmek a{
+        display: inline-block;
+        padding:10px 30px;
+        background-color:blue;
+        color:#fff;
+        text-decoration: 0;
+        font-weight:200;
+        letter-spacing: 1px;
+      
+    }
+    
+    .div-kartlar img{
+        border-top-left-radius: 20px;
+        padding: 0;
+        width: 0;
+     }
+    #div-kartlar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       size-adjust: 200px;
+    }
+    .card-text{
+        padding:20px
+    }
+    
+    
+    #div-alt{
+    background-color: #ffffff;
+    }
+    
+    
+    .etiket{ 
+       background-color : #f7f3f0;
+       padding: 10px;
+       border-radius: 10px;
+       color:#D19163;
+       
+       
+    }
+    .tarih{
+        color:#999999;
+    }
+    
+     
+        
+    
+    .card{
+        border-radius: 20px;
+        border: solid 1px black;
+        width: 30%;
+    }
+    
+    
+/*blog*/
+
+    #div-donmek a{
+        display: inline-block;
+    padding:10px 30px;
+    background-color:blue;
+    color:#fff;
+    text-decoration: 0;
+    font-weight:200;
+    letter-spacing: 1px;
+  
+    }
+  
+
+    /*services style*/
+
+    #div-donmek a{
+        display: inline-block;
+    padding:10px 30px;
+    background-color:blue;
+    color:black;
+    text-decoration: 0;
+    font-weight:200;
+    letter-spacing: 1px;
+  
+    }
+
+    body{
+        background-color:beige;
+    }
+
+    h1,h2{
+        color:black;
+    }
+
+    p{
+        color:black;
+    }
+
+
+
+    .container {
+            display: flex;
+            align-items: flex-start; /* Aligne le texte en haut de l'image */
+            gap: 20px; /* Espacement entre l'image et le texte */
+        }
+
+        .container img {
+            max-height: 150px; /* Taille maximale de l'image */
+            width: auto; /* Maintient le ratio de l'image */
+        }
+
+        .container p {
+            margin: 0; /* Supprime les marges par défaut du paragraphe */
+            line-height: 1.5; /* Améliore la lisibilité */
+        }
+   
