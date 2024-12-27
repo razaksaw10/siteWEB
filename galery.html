@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Polyvalente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">>
+</head>
+<body>
+    <header>
+        <h1>Galerie des différentes activités du Lycée Madina Filles</h1>
+        <p>Savoir et Morale</p>
+    </header>
+
+    <!-- Galerie Grille -->
+    <section class="gallery-grid">
+        <h2>Galerie en Grille</h2>
+        <div class="grid-container">
+            <a href="home.html">
+                <img src="bel a.jpg" alt="Image 1" style=color:black>
+            </a>
+            <a href="gallery-part2.html">
+                <img src="FAC.png" alt="Image 2" style=color:black>
+            </a>
+            <a href="gallery-part3.html">
+                <img src="gerek.jpg" alt="Image 3" style=color:black>
+            </a>
+            <a href="gallery-part4.html">
+                <img src="ins.png" alt="Image 4" style=color:black>
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- Galerie Carrousel -->
+    <section class="gallery-carousel">
+        <h2>Galerie Carrousel</h2>
+        <div class="carousel-container">
+            <input type="radio" id="slide1" name="carousel" checked>
+            <input type="radio" id="slide2" name="carousel">
+            <input type="radio" id="slide3" name="carousel">
+            <input type="radio" id="slide4" name="carousel">
+
+            <div class="carousel-slides">
+                <a href="carrousel-part1.html">
+                    <div class="slide" style="background-image: url('ned.jpg');"></div>
+                </a>
+                <a href="carrousel-part2.html">
+                    <div class="slide" style="background-image: url('people-2557399_1280.jpg');"></div>
+                </a>
+                <a href="carrousel-part3.html">
+                    <div class="slide" style="background-image: url('reception.jpg');"></div>
+                </a>
+                <a href="carrousel-part4.html">
+                    <div class="slide" style="background-image: url('extra.jpg');"></div>
+                </a>
+            </div>
+
+            <div class="carousel-navigation">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vidéos avec Texte -->
+    <section class="video-section">
+        <h2>Vidéos avec Texte</h2>
+        <div class="video-container">
+            <div class="video-card">
+                <video src="VID-20240623-WA0032.mp4" controls></video>
+                <p>Description du Lycée Madina Filles</p>
+            </div>
+            <div class="video-card">
+                <video src="VID-20240623-WA0032.mp4" controls></video>
+                <p>Description des activités au sein du lycée</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="div-donmek">
+        <a href="anasayfa.html">Retour à la page d'accueil</a>
+    </div>
+
+    
+</body>
+</html>
