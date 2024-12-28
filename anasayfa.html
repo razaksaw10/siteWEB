@@ -1,203 +1,83 @@
-
-  <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LA BOUTİQUE DE MARQUE </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA BOUTIQUE DE MARQUE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+</head>
+<body>
     <div id="Hepsi">
-    <div id="div-ust">
-        <div id="div-nav">
-    
-            <div id="div-logo">
-                <img class="log" src="madina.jpg">
-            </div>
-            
-            
-            
-            
-            <div id="div-nav-wrap">
-                <ul class="nav-ul">
-                    <li>
-                        <a href="anasayfa.html">Page D accueille</a>
-                    </li>
-                    <li>
-                        <a href="propos.html">A propos</a>
-                    </li>
-                    <li>
-                        <a href="Services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="galery.html">Galeries</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
-            </div>
-    
-    
-    
-            <div id="div-sm">
-               <a href="https://www.instagram.com/"><img src="ins.png" height="20px"></a>
-               <a href="https://www.facebook.com/"><img src="FAC.png" height="20px"></a>
-               <a href="#"><img src="twi.png" height="20px"></a>
+        <div id="div-ust">
+            <div id="div-nav">
+                <div id="div-logo">
+                    <img class="log" src="madina.jpg" alt="Logo">
+                </div>
+
+                <div id="div-nav-wrap">
+                    <ul class="nav-ul">
+                        <li><a href="anasayfa.html">Page D'accueil</a></li>
+                        <li><a href="propos.html">A propos</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="galery.html">Galeries</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="login.html">Se Connecter</a></li> <!-- Bouton Connexion -->
+                        <li><a href="signup.html">S'inscrire</a></li> <!-- Bouton Inscription -->
+                    </ul>
+                </div>
+
+                <div id="div-sm">
+                    <a href="https://www.instagram.com/"><img src="ins.png" height="20px" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="FAC.png" height="20px" alt="Facebook"></a>
+                    <a href="#"><img src="twi.png" height="20px" alt="Twitter"></a>
+                </div>
             </div>
         </div>
-    </div>
-    
-        
-        
-        
-        
-        
+
         <div class="essai">
-            
-            
-             
-             <div class="div-yazilar">
-                <strong></strong><h2 style="color:black; text-align:center;font-weight: 600,bold;" >BİENVENUE AU GROUPE SCOLAİRE MADİNA FİLLE</h2></strong>
-                
+            <div class="div-yazilar">
+                <h2 style="color:black; text-align:center; font-weight:600;">BİENVENUE AU GROUPE SCOLAİRE MADİNA FİLLE</h2>
+
                 <div id="div-orta">
                     <div id="div-orta-yazilar">
-                        <h3 style="color:black;;font-weight: 600,bold">ACTUALİTES</h3>
-                        <p style="color:black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse, sunt minus, inventore numquam expedita unde explicabo
+                        <h3 style="color:black; font-weight:600;">ACTUALITES</h3>
+                        <p style="color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas esse, sunt minus, inventore numquam expedita unde explicabo
                              doloremque eius culpa impedit. Voluptatum dicta ea minus totam aut corporis delectus debitis!</p>
-                             <div><a class="ali" href="https://www.lipsum.com/">Read More</a></div>
+                        <div><a class="ali" href="https://www.lipsum.com/">Read More</a></div>
                     </div>
-                    
                 </div>
-         
-             
-    
-         
-    
-    
-    
-    </div>
-    
-</div>
-    
-    
-    
-    
-    
-    
-    
-   
-    
-    
-        
-        <div id="oho">
-           
-            
-        
-            <div>
-                <a><p  style="color:white">Plus de renseignement:+226 64 82 80 17</p></a>
-                </div>
-                 <p style="color:white">LYCEE MADİNA SAVOİR ET MORALE</p>
-                <span><strong><p style="color:white">By saara creation</p></strong></span>
+            </div>
         </div>
 
-
-
+        <div id="oho">
+            <div>
+                <a><p style="color:white">Plus de renseignement:+226 64 82 80 17</p></a>
+            </div>
+            <p style="color:white">LYCEE MADİNA SAVOİR ET MORALE</p>
+            <span><strong><p style="color:white">By Saara Creation</p></strong></span>
+        </div>
 
         <h1>Liste des données</h1>
-    <div id="data-container"></div>
+        <div id="data-container"></div>
 
-    <script>
-        // Récupérer les données depuis le backend PHP
-        fetch('backend.php')
-            .then(response => response.json())
-            .then(data => {
-                // Insérer les données dans le HTML
-                const container = document.getElementById('data-container');
-                data.forEach(item => {
-                    const div = document.createElement('div');
-                    div.textContent = `ID: ${item.id}, Nom: ${item.nom}`;
-                    container.appendChild(div);
-                });
-            })
-            .catch(error => console.error('Erreur:', error));
-    </script>
-    
-    
-    
-
-
-
-
-
-    
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </head>
-    </html>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-         
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+        <script>
+            // Récupérer les données depuis le backend PHP
+            fetch('backend.php')
+                .then(response => response.json())
+                .then(data => {
+                    // Insérer les données dans le HTML
+                    const container = document.getElementById('data-container');
+                    data.forEach(item => {
+                        const div = document.createElement('div');
+                        div.textContent = `ID: ${item.id}, Nom: ${item.nom}`;
+                        container.appendChild(div);
+                    });
+                })
+                .catch(error => console.error('Erreur:', error));
+        </script>
+    </div>
 </body>
 </html>

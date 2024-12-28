@@ -1,13 +1,13 @@
 <?php
 // Configuration de la base de données
 $host = 'localhost';
-$user = '#';
-$password = '#';
+$user = '#'; // Remplacez par votre nom d'utilisateur
+$password = '#'; // Remplacez par votre mot de passe
 $database = 'deneme';
 $port = 3307; // Nouveau port MySQL
 
 // Connexion à la base de données
-$conn = new mysqli($host, $user, $password, $database,3307);
+$conn = new mysqli($host, $user, $password, $database, $port);
 
 // Vérification de la connexion
 if ($conn->connect_error) {
@@ -27,6 +27,9 @@ if ($result && $result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
     }
+} else {
+    // Si aucune donnée n'est trouvée, renvoyer un tableau vide
+    $data = [];
 }
 
 // Envoi des données au format JSON
