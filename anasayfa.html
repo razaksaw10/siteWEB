@@ -72,12 +72,13 @@
                     const container = document.getElementById('data-container');
                     data.forEach(item => {
                         const div = document.createElement('div');
-                        div.textContent = `ID: ${item.id}, Nom: ${item.nom}`;
+                        div.textContent = `ID: ${item.id}, Nom: ${item.nom}, Email: ${item.email}`;
                         container.appendChild(div);
                     });
                 })
                 .catch(error => console.error('Erreur:', error));
         </script>
+        
     </div>
 </body>
 </html>
