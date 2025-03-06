@@ -246,6 +246,7 @@ body{
 
 .nav-ul li :hover{
 background-color:#D19163;
+
 }
 
 #div-nav{
@@ -439,6 +440,7 @@ width: 90px;
         text-decoration: 0;
         font-weight:200;
         letter-spacing: 1px;
+        display: flex;
       
     }
     
@@ -487,16 +489,7 @@ width: 90px;
     
 /*blog*/
 
-    #div-donmek a{
-        display: inline-block;
-    padding:10px 30px;
-    background-color:blue;
-    color:#fff;
-    text-decoration: 0;
-    font-weight:200;
-    letter-spacing: 1px;
-  
-    }
+   
   
 
     /*services style*/
@@ -504,13 +497,19 @@ width: 90px;
     #div-donmek a{
         display: inline-block;
     padding:10px 30px;
-    background-color:blue;
+    background-color:rgb(170, 170, 173);
     color:black;
     text-decoration: 0;
     font-weight:200;
     letter-spacing: 1px;
-  
+    border-radius: 10px;
     }
+
+    #div-donmek a:hover {
+        background: white;
+        transition: 0,5ms;
+    }
+    
 
     body{
         background-color:beige;
@@ -524,21 +523,92 @@ width: 90px;
         color:black;
     }
 
-
-
     .container {
-            display: flex;
-            align-items: flex-start; /* Aligne le texte en haut de l'image */
-            gap: 20px; /* Espacement entre l'image et le texte */
-        }
+        
+        align-items: flex-start; /* Aligne le texte en haut de l'image */
+        gap: 20px; /* Espacement entre l'image et le texte */;
+       justify-content: space-between;
 
-        .container img {
-            max-height: 150px; /* Taille maximale de l'image */
-            width: auto; /* Maintient le ratio de l'image */
-        }
 
-        .container p {
-            margin: 0; /* Supprime les marges par défaut du paragraphe */
-            line-height: 1.5; /* Améliore la lisibilité */
+       
+        width: 100%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+
+    }
+
+    .container img {
+        max-height: 150px; /* Taille maximale de l'image */
+        width: auto; /* Maintient le ratio de l'image */
+    }
+
+    .container p {
+        margin: 0; /* Supprime les marges par défaut du paragraphe */
+        line-height: 1.5; /* Améliore la lisibilité */
+    }
+
+    .container h1,h2,h3,h4,h5,h6{
+       
+       
+        text-align: center;
+        
+            color: #222;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+            margin-top: 20px;
         }
-   
+        
+    
+
+        
+    
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+button a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+#bas_page {
+    display: flex;
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+   /* align-items: center;  Aligne verticalement les éléments */
+    background: #333; /* Couleur de fond */
+    color: white;
+    padding: 10px 20px;
+}
+
+#div-sam {
+    display: flex;
+    gap: 10px; /* Espacement entre les icônes */
+}
+
+#div-sam img {
+    height: 25px;
+    width: auto;
+}
+
+footer {
+    flex-grow: 1; /* Permet au footer de prendre de l'espace */
+    text-align: center;
+}
+
+#bas_page p {
+    margin: 0 10px;
+}
